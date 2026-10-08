@@ -7,11 +7,11 @@
 }
 
 :root {
-    --bg-color: #0a192f;
-    --card-bg: #112240;
-    --text-primary: #ccd6f6;
-    --text-muted: #8892b0;
-    --accent: #64ffda;
+    --bg-color: #0a2f0d;
+    --card-bg: #114019;
+    --text-primary: #ffffff;
+    --text-muted: #ffffff;
+    --accent: #fffc64;
     --accent-glow: rgba(100, 255, 218, 0.1);
     --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
@@ -36,14 +36,27 @@ a { text-align: none; color: inherit; text-decoration: none;}
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color: rgba(10, 47, 10, 0.85);
     backdrop-filter: blur(10px);
     z-index: 100;
 }
 
 .contact-link > h2{
     display: inline;
+    color: white;
 }
+.btn-primary-opposite {
+    border: 1px solid;
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-primary-opposite:hover {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    color: var(--bg-color);
+}
+
 
 .logo {
     font-size: 24px;
@@ -72,7 +85,7 @@ a { text-align: none; color: inherit; text-decoration: none;}
 }
 
 /* --- Buttons --- */
-.btn-primary, .btn-secondary, .btn-outline {
+.btn-primary, .btn-secondary, .btn-outline, .btn-primary-opposite {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 4px;
@@ -197,7 +210,7 @@ a { text-align: none; color: inherit; text-decoration: none;}
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    box-shadow: 0 10px 30px -15px rgba(2, 27, 3, 0.7);
 }
 
 .project-img-placeholder {
